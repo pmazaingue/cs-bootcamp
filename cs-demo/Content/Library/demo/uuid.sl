@@ -1,6 +1,6 @@
 ########################################################################################################################
 #!!
-#! @description: Generated operation description
+#! @description: Generates random id
 #!
 #! @output uuid: Generated id
 #! @result SUCCESS: Operation always completes successfully.
@@ -13,7 +13,7 @@ operation:
     name: uuid
 
     python_action:
-      script:
+      script: |
         import uuid
         uuid = str(uuid.uuid1())
 
